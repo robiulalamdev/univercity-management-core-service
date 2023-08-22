@@ -23,7 +23,8 @@ const getDataFromDB = async (
   filters: IAcademicSemesterFilter,
   options: IPaginationOptions
 ): Promise<IGenericResponse<AcademicSemester[]>> => {
-  const { limit, skip, page } = paginationHelpers.calculatePagination(options);
+  const { limit, skip, page, sortOrder, sortBy } =
+    paginationHelpers.calculatePagination(options);
   const { searchTerm, ...filterData } = filters;
 
   const andConditions = [];
@@ -55,6 +56,9 @@ const getDataFromDB = async (
   const result = await prisma.academicSemester.findMany({
     skip,
     take: limit,
+    orderBy: {
+      [sortBy]: sortOrder,
+    },
     where: whereConditions,
   });
 
