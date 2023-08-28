@@ -74,6 +74,11 @@
             "date": 1693215888106,
             "name": "C:\\Next Lavel Web Dev 2023\\university-management-core-service\\logs\\winston\\successes\\phu-2023-28-08-15-success.log",
             "hash": "4ab5ff66239dd2960e58b20d8e08869b342fc06b382896ea231f50045558214c"
+        },
+        {
+            "date": 1693217295490,
+            "name": "C:\\Next Lavel Web Dev 2023\\university-management-core-service\\logs\\winston\\successes\\phu-2023-28-08-16-success.log",
+            "hash": "9eb85c47319f9169b1295a8caac6bb2d3f86d5e504dcc4386415fffa090abc65"
         }
     ],
     "hashType": "sha256"
