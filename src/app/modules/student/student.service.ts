@@ -58,7 +58,9 @@ const getAllFromDB = async (
     where: whereConditions,
   });
 
-  const total = await prisma.student.count();
+  const total = await prisma.student.count({
+    where: whereConditions,
+  });
   return {
     data: result,
     meta: {
