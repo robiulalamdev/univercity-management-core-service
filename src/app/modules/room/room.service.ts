@@ -2,8 +2,8 @@ import { Prisma, PrismaClient, Room } from '@prisma/client';
 import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
-import { RoomSearchAbleFields } from './building.constant';
-import { IRoomFilter } from './building.interface';
+import { RoomSearchAbleFields } from './room.constant';
+import { IRoomFilter } from './room.interface';
 
 const prisma = new PrismaClient();
 
