@@ -3,10 +3,13 @@ import { z } from 'zod';
 const create = z.object({
   body: z.object({
     roomNumber: z.string({
-      required_error: 'Title is Required',
+      required_error: 'Room Number is Required',
     }),
     floor: z.string({
-      required_error: 'Title is Required',
+      required_error: 'Floor is Required',
+    }),
+    buildingId: z.string({
+      required_error: 'Building ID is Required',
     }),
   }),
 });
@@ -14,6 +17,7 @@ const update = z.object({
   body: z.object({
     roomNumber: z.string().optional(),
     floor: z.string().optional(),
+    buildingId: z.string().optional(),
   }),
 });
 
